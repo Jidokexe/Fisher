@@ -33,10 +33,11 @@
             left: 0;
         }
         .logo {
-            font-size: 18px;
-            font-weight: bold;
-            color: #000000;
-            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px; /* Высота логотипа */
         }
         .login-button {
             padding: 8px 16px;
@@ -120,7 +121,9 @@
 <body>
     <!-- Шапка сайта -->
     <header>
-        <a href="#" class="logo">IT_HUB</a>
+        <div class="logo">
+            <img src="LXP_ITHUB Logo.png" alt="Логотип"> <!-- Изображение логотипа -->
+        </div>
         <a href="#" class="login-button">Войти</a>
     </header>
 
@@ -139,4 +142,3 @@
     </div>
 </body>
 </html>
-
